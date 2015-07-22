@@ -6,7 +6,7 @@ from kafka.producer import SimpleProducer
 
 logging.basicConfig()
 
-endpoint = "172.17.0.5:6667"
+endpoint = "10.190.240.235:6667"
 client =  KafkaClient(endpoint)
 
 producer = SimpleProducer(client)
