@@ -12,7 +12,7 @@ logging.basicConfig()
 endpoint = "10.190.240.235:6667"
 client =  KafkaClient(endpoint)
 
-producer = SimpleProducer(client,
+producer = SimpleProducer(client, async=False,
     batch_send_every_n=batch_size, batch_send_every_t=batch_timeout)
 
 msg = """This is message sent from python client fgskjfh fskdjfh skdjfkjs dfhksdf kjfskjdfsjkd kjfsjdkfsdfd
