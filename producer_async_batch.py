@@ -12,7 +12,7 @@ logging.basicConfig()
 endpoint = "10.190.240.235:6667"
 client =  KafkaClient(endpoint)
 
-producer = SimpleProducer(kafka, async=True,
+producer = SimpleProducer(client, async=True,
                           batch_send_every_n=batch_size,
                           batch_send_every_t=batch_timeout)
 
