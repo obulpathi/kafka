@@ -18,7 +18,8 @@ producer = SimpleProducer(client, async=False,
 msg = """This is message sent from python client fgskjfh fskdjfh skdjfkjs dfhksdf kjfskjdfsjkd kjfsjdkfsdfd
     sk kfjshkjdf jkjksfdfkjsd kjfsdhkjf sdhjkfsdkj ckjhdfk kjasfakfa kfakfhaskfasu kjfadkfj  aklfkasdf"""
 
+batched_msg = (msg + "\n") * 50
 print "Start time: " + str(datetime.now().time())
-for i in range(5000000):
-    producer.send_messages("logs", msg)
+for i in range(100000):
+    producer.send_messages("logs", batched_msg)
 print "End time: " + str(datetime.now().time())
