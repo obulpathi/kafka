@@ -9,4 +9,6 @@ print("After connecting to kafka")
 consumer = SimpleConsumer(client, "group", "logs")
 
 for message in consumer:
-    print(message)
+    print("%s:%d:%d: key=%s value=%s" % (message.topic, message.partition,
+                                         message.offset, message.key,
+                                         message.value))
