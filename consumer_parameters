@@ -1,0 +1,16 @@
+client_id='kafka.consumer.kafka',
+group_id=None,
+fetch_message_max_bytes=1024*1024,
+fetch_min_bytes=1,
+fetch_wait_max_ms=100,
+refresh_leader_backoff_ms=200,
+bootstrap_servers=[],
+socket_timeout_ms=30*1000,
+auto_offset_reset='largest',
+deserializer_class=lambda msg: msg,
+auto_commit_enable=False,
+auto_commit_interval_ms=60 * 1000,
+consumer_timeout_ms=-1
+
+Configuration parameters are described in more detail at
+http://kafka.apache.org/documentation.html#highlevelconsumerapi
