@@ -1,3 +1,4 @@
 Simple Producer: Start time: 20:05:15.323716 - End time: 20:54:54.887049    Total time: 50 min
 Async Producer: Start time: 21:12:24.837608 - End time: 21:15:54.699079     Total time: 3:30 min
-Batch Producer: Start time: 14:06:19.580583 - End time: 14:56:27.660098     Total time: 50 min :(
+Batch Producer: Start time: 15:49:21.931792 - End time: 15:50:29.763015     Total time: 1:10 min
+Batch Async Producer: Start time: 15:24:35.869319 - End time: 15:27:54.219180   Total time: 3:30 min
